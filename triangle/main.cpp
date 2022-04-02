@@ -97,21 +97,4 @@ glVertex2i(21,15);
 
  glEnd();
 
- glFlush(); // Process all OpenGL routines
-}
-
-int main(int argc, char* argv[])
-{
-glutInit(&argc, argv); // Initalise GLUT
-glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB); // Set display mode
-
- glutInitWindowPosition(50, 100); // Set window position
-glutInitWindowSize(400, 300); // Set window size
-glutCreateWindow("An Example OpenGL Program"); // Create display window
-
- init(); // Execute initialisation procedure
-glutDisplayFunc(drawShapes); // Send graphics to display window
-glutMainLoop(); // Display everything and wait
-
- return 0;
-}
+ glFlush(); // Process all OpenGL routin
